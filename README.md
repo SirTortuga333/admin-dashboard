@@ -1,3 +1,3 @@
 # admin-dashboard
 Admin Dashboard Project
-Create a Admin Dashboard layout with the use of Grid layout and FlexBox.
+Create a Admin Dashboard layout with the use of Grid Layout.
