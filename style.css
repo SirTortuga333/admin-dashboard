@@ -182,6 +182,10 @@ input[type="search"]{
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
+.logo-title > svg{
+    height: 4rem;
+    width: 4rem;
+}
 .logo-title > p{
     color: #fff;
     font-size: 2rem;
