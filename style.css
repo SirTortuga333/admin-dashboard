@@ -65,6 +65,11 @@ svg{
 .content svg{
     fill: #000;
 }
+.project-desc,
+.trending-card > .desc,
+.announcement > .announcement-desc{
+    color: #6f6f6f;
+}
 
 .header{
     grid-column: 2 / -1;
@@ -101,6 +106,14 @@ input[type="search"]{
     justify-items: center;
     gap: 1rem;
 }
+.profile > img{
+    width: 3rem;
+    height: 3rem;
+}
+.profile > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 .nav-bar{
     grid-row: 2 / 3;
@@ -120,8 +133,17 @@ input[type="search"]{
     grid-template-rows: 1fr 2fr;
     align-items: center;
 }
+.greeting > p{
+    font-weight: bold;
+}
+.greeting > .user-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .greeting > img{
     grid-row: 1 / 3;
+    width: 5rem;
+    height: 5rem;
 }
 .buttons{
     display: grid;
@@ -187,6 +209,7 @@ input[type="search"]{
     margin: 2rem 0 3rem 0;
     padding: 2rem;
     background-color: #e2e8f0;
+    gap: 1rem;
 }
 
 .projects{
@@ -200,6 +223,8 @@ input[type="search"]{
 }
 .projects > p{
     grid-column: 1 / -1;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .project-card{
     display: grid;
@@ -207,6 +232,9 @@ input[type="search"]{
     grid-template-rows: 2rem 1fr 2rem;
     align-items: stretch;
     background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #d4dae2;
+    border-radius: 1rem;
 }
 .project-title{
     grid-column: 1 / -1;
@@ -232,17 +260,25 @@ input[type="search"]{
     grid-template-rows: 2rem;
     grid-auto-rows: 1fr;
 }
+.announcements-bar > p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.announcements{
+    box-shadow: 0.5rem 0.5rem 0.5rem #d4dae2;
+    border-radius: 1rem;
+}
 .announcement{
     margin: 1rem 1rem 2rem;
     height: 5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: #fff;
+    padding-top: 1ch;
 }
 .announcement:nth-child(1n+2){
     border-top: 1px solid #d2d2d2;
 }
-
 
 .trending{
     grid-column: 2 / 3;
@@ -253,8 +289,14 @@ input[type="search"]{
     grid-template-rows: 2rem;
     grid-auto-rows: 1fr;
 }
+.trending > p{
+    font-size: 1.5rem;
+    font-weight: bold;}
 .trending > div{
     margin: 1rem;
+    background-color: #fff;
+    box-shadow: 0.5rem 0.5rem 0.5rem #d4dae2;
+    border-radius: 1rem;
 }
 .trending-card{
     display: grid;
@@ -266,6 +308,9 @@ input[type="search"]{
 }
 .trending-card > img{
     grid-row: 1 / -1;
+    width: 3rem;
+    height: 3rem;
+    justify-self: center;
 }
 
 
