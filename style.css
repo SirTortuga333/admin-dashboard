@@ -160,6 +160,7 @@ input[type="search"]{
     grid-template-rows: 1fr 1fr;
     margin: 2rem 0 3rem 0;
     padding: 2rem;
+    background-color: #e2e8f0;
 }
 
 .projects{
@@ -179,6 +180,7 @@ input[type="search"]{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2rem 1fr 2rem;
     align-items: stretch;
+    background-color: #fff;
 }
 .project-title{
     grid-column: 1 / -1;
@@ -195,13 +197,49 @@ input[type="search"]{
 }
 
 
-.announcements{
+.announcements-bar{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem;
+    grid-auto-rows: 1fr;
 }
+.announcement{
+    margin: 1rem 1rem 2rem;
+    height: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #fff;
+}
+.announcement:nth-child(1n+2){
+    border-top: 1px solid #d2d2d2;
+}
+
+
 .trending{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem;
+    grid-auto-rows: 1fr;
+}
+.trending > div{
+    margin: 1rem;
+}
+.trending-card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+.trending-card:not(:last-child){
+    margin-bottom: 1rem;
+}
+.trending-card > img{
+    grid-row: 1 / -1;
 }
 
 
@@ -221,4 +259,8 @@ body > * > * > *{
 
 body > * > * > * > *{
     border: 1px solid green;
+}
+
+body > * > * > * > * > *{
+    border: 1px solid violet;
 }
